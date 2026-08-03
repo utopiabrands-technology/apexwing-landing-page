@@ -1,5 +1,6 @@
 /* Apexwing Landing Page — static styles */
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body { margin: 0; background: #F6F5F1; font-family: 'Manrope', sans-serif; color: #061334; overflow-x: hidden; }
 a { color: #143DA3; text-decoration: none; }
 a:hover { color: #061334; }
@@ -21,7 +22,6 @@ img { display: block; max-width: 100%; }
 .nav { display: flex; align-items: center; gap: 36px; flex: 1; justify-content: center; }
 .nav-link { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.04em; text-transform: uppercase; color: #3A4356; }
 .nav-link:hover { color: #061334 !important; }
-.menu-toggle, .nav-mobile-cta { display: none; }
 
 .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.03em; text-transform: uppercase; padding: 17px 36px; border-radius: 999px; transition: all .18s ease; border: none; cursor: pointer; }
 .btn-sm { font-size: 16px; padding: 12px 26px; }
@@ -29,6 +29,9 @@ img { display: block; max-width: 100%; }
 .btn-volt:hover { background: #adde08; transform: translateY(-2px); color: #061334; }
 .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); color: #FFFFFF; background: transparent; }
 .btn-outline:hover { background: rgba(255,255,255,0.1); color: #FFFFFF; }
+
+/* The base .btn display rule appears above; keep mobile-only header controls hidden by default. */
+.menu-toggle, .nav-mobile-cta { display: none; }
 
 /* hero */
 .hero { position: relative; background: radial-gradient(120% 140% at 85% 0%, #143DA3 0%, #061334 55%), #061334; overflow: hidden; }
